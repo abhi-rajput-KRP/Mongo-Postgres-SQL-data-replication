@@ -69,7 +69,7 @@ elif choice == 'm':
             port=input("Enter the post of your server (5432 is using local server) :: ").strip()
         )
         cur = conn.cursor()
-        cur.execute(f'SELECT * FROM user_detail;')
+        cur.execute(f'SELECT * FROM {table};')
         result = cur.fetchall()
         column_names = [desc[0] for desc in cur.description]
         db_created = input(f"Enter y to start inserting data into {db} db in your mongo server : ").strip().lower()
