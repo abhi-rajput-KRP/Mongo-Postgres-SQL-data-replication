@@ -3,6 +3,5 @@ This is a practice project that helps in setting up the mongo db from the data o
 
 You will need to install 2 modules :
 ```
-pip install pymongo
-pip install psycopg2-binary
+pip install pymongo psycopg2-binary
 ````
